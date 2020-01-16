@@ -30,7 +30,7 @@ public class TC001_Get_All_Employees extends TestBase{
 
 		
 	@BeforeClass
-	void getAllEmployees() throws InterruptedException
+	void getAllEmployees() throws InterruptedException 
 	{
 	
 	logger.info("*********Started TC001_Get_All_Employees **********");
@@ -75,10 +75,9 @@ public class TC001_Get_All_Employees extends TestBase{
 		if(responseTime>2000)
 			logger.warn("Response Time is greater than 2000");
 		
-		Assert.assertTrue(responseTime<10000);
-		
-			
+		Assert.assertTrue(responseTime<10000);		
 	}
+	
 	
 	@Test
 	void checkstatusLine()
@@ -87,12 +86,9 @@ public class TC001_Get_All_Employees extends TestBase{
 		
 		String statusLine = response.getStatusLine(); // Getting status Line
 		logger.info("Status Line is ==>" + statusLine);
-		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
-	
-		
+		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");	
 	}
-	
-	
+		
 	@Test
 	void checkContentType()
 	{
@@ -121,9 +117,7 @@ public class TC001_Get_All_Employees extends TestBase{
 		
 		String contentEncoding = response.header("Content-Encoding");
 		logger.info("Content Encoding is==>" +contentEncoding); 
-		Assert.assertEquals(contentEncoding, "gzip");
-		
-		
+		Assert.assertEquals(contentEncoding, "gzip");		
 	}
 
 	@Test
