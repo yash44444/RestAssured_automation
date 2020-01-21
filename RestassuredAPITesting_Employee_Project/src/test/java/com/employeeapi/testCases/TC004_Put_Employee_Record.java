@@ -44,10 +44,9 @@ public class TC004_Put_Employee_Record extends TestBase {
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
 		httpRequest = RestAssured.given();
 
-		// JSONObject is a class that represents a simple JSON. We can add Key-Value pairs using the put method
-		//{"name":"John123X","salary":"123","age":"23"}
+		// JSONObject is a class that represents a simple JSON. 
 		JSONObject requestParams = new JSONObject();
-		requestParams.put("name", empName); // Cast
+		requestParams.put("name", empName); 
 		requestParams.put("salary", empSalary);
 		requestParams.put("age", empAge);
 		
@@ -56,9 +55,7 @@ public class TC004_Put_Employee_Record extends TestBase {
 
 		// Add the Json to the body of the request
 		httpRequest.body(requestParams.toJSONString());
-
-		response = httpRequest.request(Method.PUT, "/update/"+empID);
-		
+		response = httpRequest.request(Method.PUT, "/update/"+empID);		
 		Thread.sleep(5000);
 
 	}
@@ -67,7 +64,7 @@ public class TC004_Put_Employee_Record extends TestBase {
 	void checkResposeBody()
 	{
 		String responseBody = response.getBody().asString();
-				
+		System.out.println(responseBody);		
 		Assert.assertEquals(responseBody.contains(empName), true);
 		Assert.assertEquals(responseBody.contains(empSalary), true);
 		Assert.assertEquals(responseBody.contains(empAge), true);
@@ -76,14 +73,14 @@ public class TC004_Put_Employee_Record extends TestBase {
 	@Test
 	void checkStatusCode()
 	{
-		int statusCode = response.getStatusCode(); // Gettng status code
+		int statusCode = response.getStatusCode(); 
 		Assert.assertEquals(statusCode, 200);
 	}
 		
 	@Test
 	void checkstatusLine()
 	{
-		String statusLine = response.getStatusLine(); // Gettng status Line
+		String statusLine = response.getStatusLine(); 
 		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
 		
 	}

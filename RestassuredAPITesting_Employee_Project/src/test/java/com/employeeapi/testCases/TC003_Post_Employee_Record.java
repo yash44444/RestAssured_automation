@@ -45,8 +45,7 @@ public class TC003_Post_Employee_Record extends TestBase{
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
 		httpRequest = RestAssured.given();
 
-		// JSONObject is a class that represents a simple JSON. We can add Key-Value pairs using the put method
-		//{"name":"John123X","salary":"123","age":"23"}
+		// Request payload
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("name", empName); // Cast
 		requestParams.put("salary", empSalary);
@@ -57,30 +56,36 @@ public class TC003_Post_Employee_Record extends TestBase{
 
 		// Add the Json to the body of the request
 		httpRequest.body(requestParams.toJSONString());
-
-		response = httpRequest.request(Method.POST, "/create");
-		
+		response = httpRequest.request(Method.POST, "/create");		
 		Thread.sleep(5000);
 
 	}
 	
-	@Test
-	void checkResposeBody()
+	@Test(priority=1)
+	void checkResponseBody()
 	{
 		String responseBody = response.getBody().asString();
+		System.out.println(responseBody);
 		Assert.assertEquals(responseBody.contains(empName), true);
 		Assert.assertEquals(responseBody.contains(empSalary), true);
 		Assert.assertEquals(responseBody.contains(empAge), true);
 	}
 		
-	@Test
+	@Test(priority=2)
 	void checkStatusCode()
 	{
 		int statusCode = response.getStatusCode(); // Gettng status code
 		Assert.assertEquals(statusCode, 200);
 	}
+	
+	@Test(priority=3)
+	void checkSuccessCode()
+	{
+		String successCode = response.jsonPath().get("status"); // Gettng success code
+		Assert.assertEquals(successCode, "success");
+	}
 		
-	@Test
+	@Test(priority=4)
 	void checkstatusLine()
 	{
 		String statusLine = response.getStatusLine(); // Gettng status Line
@@ -88,14 +93,14 @@ public class TC003_Post_Employee_Record extends TestBase{
 		
 	}
 	
-	@Test
+	@Test(priority=5)
 	void checkContentType()
 	{
 		String contentType = response.header("Content-Type");
 		Assert.assertEquals(contentType, "application/json;charset=utf-8");
 	}
 
-	@Test
+	@Test(priority=6)
 	void checkserverType()
 	{
 		String serverType = response.header("Server");

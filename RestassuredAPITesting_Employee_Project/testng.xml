@@ -12,7 +12,6 @@
 			<class name="com.employeeapi.testCases.TC003_Post_Employee_Record" />
 			<class name="com.employeeapi.testCases.TC004_Put_Employee_Record" />
 			<class name="com.employeeapi.testCases.TC005_Delete_Employee_Record" />
-
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

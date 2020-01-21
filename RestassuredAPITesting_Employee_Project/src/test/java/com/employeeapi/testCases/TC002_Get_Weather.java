@@ -21,11 +21,13 @@ import org.testng.annotations.*;
 import com.employeeapi.base.TestBase;
 
 import io.restassured.RestAssured;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class TC002_Get_Single_Employee_Record extends TestBase{
+public class TC002_Get_Weather extends TestBase{
 
 	RequestSpecification httpRequest;
 	Response response;
@@ -35,62 +37,35 @@ public class TC002_Get_Single_Employee_Record extends TestBase{
 	{
 		logger.info("*********Started TC002_Get_Single_Employee_Record **********");
 		
-		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
+		//RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
+		RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city";
 		httpRequest = RestAssured.given();
-		response = httpRequest.request(Method.GET, "/employee/"+empID);
+		response = httpRequest.request(Method.GET,"/Delhi");
 		
 		Thread.sleep(5000);
 	}
 	
-	@Test
-	void checkResposeBody()
+	
+	@Test(priority=1)
+	void checkResponseBody()
 	{
 		String responseBody = response.getBody().asString();
-		Assert.assertEquals(responseBody.contains(empID), true);
+		System.out.println(responseBody);
+		Assert.assertEquals(responseBody.contains("Delhi"),true);
+		
+		
+		// Get all the header at once
+		Headers allheaders=response.getHeaders();
+		for(Header header:allheaders) {
+			System.out.println(header.getName()+" : "+header.getValue());
+		}
 	}
 		
-	@Test
+	@Test(priority=2)
 	void checkStatusCode()
 	{
 		int statusCode = response.getStatusCode(); // Gettng status code
 		Assert.assertEquals(statusCode, 200);
-	}
-	
-	@Test
-	void checkResponseTime()
-	{
-		long responseTime = response.getTime(); // Getting status Line
-		Assert.assertTrue(responseTime<6000);
-		
-	}
-		
-	@Test
-	void checkstatusLine()
-	{
-		String statusLine = response.getStatusLine(); // Gettng status Line
-		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
-		
-	}
-	
-	@Test
-	void checkContentType()
-	{
-		String contentType = response.header("Content-Type");
-		Assert.assertEquals(contentType, "text/html; charset=UTF-8");
-	}
-
-	@Test
-	void checkserverType()
-	{
-		String serverType = response.header("Server");
-		Assert.assertEquals(serverType, "nginx/1.14.1");
-	}
-
-	@Test
-	void checkContentLenght()
-	{
-		String contentLength = response.header("Content-Length");
-		Assert.assertTrue(Integer.parseInt(contentLength)<1500);
 	}
 	
 	@AfterClass

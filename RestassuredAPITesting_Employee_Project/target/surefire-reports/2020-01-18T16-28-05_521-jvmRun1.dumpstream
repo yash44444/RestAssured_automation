@@ -1,0 +1,277 @@
+# Created on 2020-01-18T16:28:08.390
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+
+# Created on 2020-01-18T16:28:08.676
+Unexpected IOException with stream: 2020-01-18 16:28:08 INFO  EmployeesRestAPI:36 - *********Started TC001_Get_All_Employees **********
+
+
+# Created on 2020-01-18T16:28:12.805
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkContentLenght(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:12.814
+Unexpected IOException with stream: 2020-01-18 16:28:12 INFO  EmployeesRestAPI:126 - ***********  Checking Content Lenght**********
+
+
+# Created on 2020-01-18T16:28:12.824
+Unexpected IOException with stream: 2020-01-18 16:28:12 INFO  EmployeesRestAPI:129 - Content Length is==>595
+
+
+# Created on 2020-01-18T16:28:12.873
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkContentLenght(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:12.884
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkContentType(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:12.894
+Unexpected IOException with stream: 2020-01-18 16:28:12 INFO  EmployeesRestAPI:95 - ***********  Checking Content Type **********
+
+
+# Created on 2020-01-18T16:28:12.908
+Unexpected IOException with stream: 2020-01-18 16:28:12 INFO  EmployeesRestAPI:98 - Content type is ==>application/json;charset=utf-8
+
+
+# Created on 2020-01-18T16:28:12.918
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkContentType(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:12.931
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkCookies(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:12.943
+Unexpected IOException with stream: 2020-01-18 16:28:12 INFO  EmployeesRestAPI:141 - ***********  Checking Cookies **********
+
+
+# Created on 2020-01-18T16:28:12.952
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkCookies(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:12.962
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkResponseTime(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:12.972
+Unexpected IOException with stream: 2020-01-18 16:28:12 INFO  EmployeesRestAPI:70 - ***********  Checking Response Time **********
+
+
+# Created on 2020-01-18T16:28:12.986
+Unexpected IOException with stream: 2020-01-18 16:28:12 INFO  EmployeesRestAPI:73 - Response Time is ==>2587
+
+
+# Created on 2020-01-18T16:28:12.997
+Unexpected IOException with stream: 2020-01-18 16:28:12 WARN  EmployeesRestAPI:76 - Response Time is greater than 2000
+
+
+# Created on 2020-01-18T16:28:13.006
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkResponseTime(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:13.019
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkResposeBody(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:13.033
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:48 - ***********  Checking Respose Body **********
+
+
+# Created on 2020-01-18T16:28:13.120
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:51 - Response Body==>{"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+
+
+# Created on 2020-01-18T16:28:13.131
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkResposeBody(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:13.143
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkStatusCode(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:13.160
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:59 - ***********  Checking Status Code **********
+
+
+# Created on 2020-01-18T16:28:13.172
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:62 - Status Code is ==>200
+
+
+# Created on 2020-01-18T16:28:13.184
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkStatusCode(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:13.199
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkcontentEncoding(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:13.209
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:116 - ***********  Checking Content Encoding**********
+
+
+# Created on 2020-01-18T16:28:13.220
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:119 - Content Encoding is==>gzip
+
+
+# Created on 2020-01-18T16:28:13.235
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkcontentEncoding(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:13.247
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkserverType(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:13.283
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:105 - ***********  Checking Server Type **********
+
+
+# Created on 2020-01-18T16:28:13.293
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:108 - Server Type is =>nginx/1.16.0
+
+
+# Created on 2020-01-18T16:28:13.307
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkserverType(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:13.331
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkstatusLine(com.employeeapi.testCases.TC001_Get_All_Employees),com.employeeapi.testCases.TC001_Get_All_Employees,null,null
+
+
+# Created on 2020-01-18T16:28:13.353
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:85 - ***********  Checking Status Line **********
+
+
+# Created on 2020-01-18T16:28:13.364
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:88 - Status Line is ==>HTTP/1.1 200 OK
+
+
+# Created on 2020-01-18T16:28:13.441
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC001_Get_All_Employees,checkstatusLine(com.employeeapi.testCases.TC001_Get_All_Employees),null,null,null
+
+
+# Created on 2020-01-18T16:28:13.495
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:151 - *********  Finished TC001_Get_All_Employees **********
+
+
+# Created on 2020-01-18T16:28:13.550
+Unexpected IOException with stream: 2020-01-18 16:28:13 INFO  EmployeesRestAPI:36 - *********Started TC002_Get_Single_Employee_Record **********
+
+
+# Created on 2020-01-18T16:28:19.607
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkContentLenght(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),com.employeeapi.testCases.TC002_Get_Single_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:19.618
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkContentLenght(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:19.630
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkContentType(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),com.employeeapi.testCases.TC002_Get_Single_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:19.640
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkContentType(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:19.653
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkResponseTime(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),com.employeeapi.testCases.TC002_Get_Single_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:19.662
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkResponseTime(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:19.674
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkResposeBody(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),com.employeeapi.testCases.TC002_Get_Single_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:19.722
+Unexpected IOException: 8,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkResposeBody(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),null,expected [true] but found [false],null,expected [true] but found [false],TC002_Get_Single_Employee_Record.checkResposeBody:49 expected [true] but found [false],java.lang.AssertionError: expected [true] but found [false]\000A\0009at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkResposeBody(TC002_Get_Single_Employee_Record.java:49)\000A
+
+
+# Created on 2020-01-18T16:28:19.735
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkStatusCode(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),com.employeeapi.testCases.TC002_Get_Single_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:19.744
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkStatusCode(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:19.756
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkserverType(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),com.employeeapi.testCases.TC002_Get_Single_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:19.766
+Unexpected IOException: 8,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkserverType(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),null,expected [nginx/1.14.1] but found [nginx/1.16.0],null,expected [nginx/1.14.1] but found [nginx/1.16.0],TC002_Get_Single_Employee_Record.checkserverType:86 expected [nginx/1.14.1] but found [nginx/1.16.0],java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx/1.16.0]\000A\0009at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkserverType(TC002_Get_Single_Employee_Record.java:86)\000A
+
+
+# Created on 2020-01-18T16:28:19.778
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkstatusLine(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),com.employeeapi.testCases.TC002_Get_Single_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:19.788
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC002_Get_Single_Employee_Record,checkstatusLine(com.employeeapi.testCases.TC002_Get_Single_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:19.800
+Unexpected IOException with stream: 2020-01-18 16:28:19 INFO  EmployeesRestAPI:99 - *********  Finished TC002_Get_Single_Employee_Record **********
+
+
+# Created on 2020-01-18T16:28:19.818
+Unexpected IOException with stream: 2020-01-18 16:28:19 INFO  EmployeesRestAPI:43 - *********Started TC003_Post_Employee_Record **********
+
+
+# Created on 2020-01-18T16:28:26.005
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkContentType(com.employeeapi.testCases.TC003_Post_Employee_Record),com.employeeapi.testCases.TC003_Post_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:26.017
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkContentType(com.employeeapi.testCases.TC003_Post_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:26.030
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkResposeBody(com.employeeapi.testCases.TC003_Post_Employee_Record),com.employeeapi.testCases.TC003_Post_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:26.044
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkResposeBody(com.employeeapi.testCases.TC003_Post_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:26.058
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkStatusCode(com.employeeapi.testCases.TC003_Post_Employee_Record),com.employeeapi.testCases.TC003_Post_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:26.072
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkStatusCode(com.employeeapi.testCases.TC003_Post_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:26.081
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkserverType(com.employeeapi.testCases.TC003_Post_Employee_Record),com.employeeapi.testCases.TC003_Post_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:26.094
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkserverType(com.employeeapi.testCases.TC003_Post_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:26.108
+Unexpected IOException: 5,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkstatusLine(com.employeeapi.testCases.TC003_Post_Employee_Record),com.employeeapi.testCases.TC003_Post_Employee_Record,null,null
+
+
+# Created on 2020-01-18T16:28:26.119
+Unexpected IOException: 6,1,com.employeeapi.testCases.TC003_Post_Employee_Record,checkstatusLine(com.employeeapi.testCases.TC003_Post_Employee_Record),null,null,null
+
+
+# Created on 2020-01-18T16:28:26.134
+Unexpected IOException with stream: 2020-01-18 16:28:26 INFO  EmployeesRestAPI:109 - *********  Finished TC003_Post_Employee_Record **********
+
+
+# Created on 2020-01-18T16:28:26.154
+Unexpected IOException with stream: 2020-01-18 16:28:26 INFO  EmployeesRestAPI:42 - *********Started TC004_Put_Employee_Record **********
+
+

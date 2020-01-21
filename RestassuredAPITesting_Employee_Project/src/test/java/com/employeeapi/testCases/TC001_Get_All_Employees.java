@@ -1,18 +1,3 @@
-/******************************************************
-Test Name:Get all employees data
-URI: http://dummy.restapiexample.com/api/v1/employees
-Request Type: GET
-Request Payload(Body): NA
-
-********* Validations **********
-Status Code : 200
-Status Line : HTTP/1.1 200 OK
-Content Type : text/html; charset=UTF-8
-Server Type :  nginx/1.14.1
-Content Encoding : gzip
-Content Length <800
- *********************************************************/
-
 package com.employeeapi.testCases;
 
 import org.testng.Assert;
@@ -35,25 +20,31 @@ public class TC001_Get_All_Employees extends TestBase{
 	
 	logger.info("*********Started TC001_Get_All_Employees **********");
 		
-	RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
-	httpRequest = RestAssured.given();
-	response = httpRequest.request(Method.GET,"/employees");
+	// Specify base URI
+	RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1"; 
+	
+	// Request object
+	httpRequest = RestAssured.given(); // With this particular object we are going to send the reqst to the server.
+	
+	// Response object. This will send the request to the server and get the response.
+	response = httpRequest.request(Method.GET,"/employees"); 
 	
 	Thread.sleep(5);
 	}
 			
-	@Test
-	void checkResposeBody()
+	@Test(priority=1)
+	void checkResponseBody()
 	{
-		logger.info("***********  Checking Respose Body **********");
+		logger.info("***********  Checking Response Body **********");
 		
-		String responseBody = response.getBody().asString();
+		// Printing response in the console window
+		String responseBody = response.getBody().asString();  // json -> string 
 		logger.info("Response Body==>"+responseBody);
 		Assert.assertTrue(responseBody!=null);
 		
 	}
 		
-	@Test
+	@Test(priority=2)
 	void checkStatusCode()
 	{
 		logger.info("***********  Checking Status Code **********");
@@ -64,7 +55,7 @@ public class TC001_Get_All_Employees extends TestBase{
 		
 	}
 		
-	@Test
+	@Test(priority=3)
 	void checkResponseTime()
 	{
 		logger.info("***********  Checking Response Time **********");
@@ -79,7 +70,7 @@ public class TC001_Get_All_Employees extends TestBase{
 	}
 	
 	
-	@Test
+	@Test(priority=4)
 	void checkstatusLine()
 	{
 		logger.info("***********  Checking Status Line **********");
@@ -89,7 +80,7 @@ public class TC001_Get_All_Employees extends TestBase{
 		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");	
 	}
 		
-	@Test
+	@Test(priority=5)
 	void checkContentType()
 	{
 		logger.info("***********  Checking Content Type **********");
@@ -99,7 +90,7 @@ public class TC001_Get_All_Employees extends TestBase{
 		Assert.assertEquals(contentType, "application/json;charset=utf-8");
 	}
 
-	@Test
+	@Test(priority=6)
 	void checkserverType()
 	{
 		logger.info("***********  Checking Server Type **********");
@@ -110,7 +101,7 @@ public class TC001_Get_All_Employees extends TestBase{
 	
 	}
 
-	@Test
+	@Test(priority=7)
 	void checkcontentEncoding()
 	{
 		logger.info("***********  Checking Content Encoding**********");
@@ -120,30 +111,6 @@ public class TC001_Get_All_Employees extends TestBase{
 		Assert.assertEquals(contentEncoding, "gzip");		
 	}
 
-	@Test
-	void checkContentLenght()
-	{
-		logger.info("***********  Checking Content Lenght**********");
-		
-		String contentLength = response.header("Content-Length");
-		logger.info("Content Length is==>" +contentLength); 
-		
-		if(Integer.parseInt(contentLength)<100)
-			logger.warn("Content Length is less than 100");
-		
-		Assert.assertTrue(Integer.parseInt(contentLength)>100);
-		
-	}
-		
-	@Test
-	void checkCookies()
-	{
-		logger.info("***********  Checking Cookies **********");
-
-		String cookie = response.getCookie("PHPSESSID");
-		//Assert.assertEquals(cookie,"1esuvsfslcmiee2bfrsgnijtg0");
-		
-	}
 	
 	@AfterClass
 	void tearDown()

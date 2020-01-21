@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>EmployeesRestAPITest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 14 15:48:45 IST 2019</td>
+<td>Started on:</td><td>Sat Jan 18 18:07:38 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26294 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29247 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,323 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkContentType()'><b>checkContentType</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
+<td><div><pre>java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkContentType(TC005_Delete_Employee_Record.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1238905282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1238905282'><pre>java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [application/json;charset=utf-8]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkContentType(TC005_Delete_Employee_Record.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@6af93788</td></tr>
+<tr>
+<td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkResposeBody()'><b>checkResposeBody</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkResposeBody(TC002_Get_Single_Employee_Record.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace227381657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace227381657'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkResposeBody(TC002_Get_Single_Employee_Record.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@149e0f5d</td></tr>
+<tr>
+<td title='com.employeeapi.testCases.TC004_Put_Employee_Record.checkResposeBody()'><b>checkResposeBody</b><br>Test class: com.employeeapi.testCases.TC004_Put_Employee_Record</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkResposeBody(TC004_Put_Employee_Record.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace906370291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace906370291'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkResposeBody(TC004_Put_Employee_Record.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.employeeapi.testCases.TC004_Put_Employee_Record@2f7c2f4f</td></tr>
+<tr>
+<td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkResposeBody()'><b>checkResposeBody</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkResposeBody(TC005_Delete_Employee_Record.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace683523720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace683523720'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkResposeBody(TC005_Delete_Employee_Record.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@6af93788</td></tr>
+<tr>
+<td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkcontentEncoding()'><b>checkcontentEncoding</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
+<td><div><pre>java.lang.AssertionError: expected [gzip] but found [null]
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkcontentEncoding(TC005_Delete_Employee_Record.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1611618052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1611618052'><pre>java.lang.AssertionError: expected [gzip] but found [null]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkcontentEncoding(TC005_Delete_Employee_Record.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@6af93788</td></tr>
+<tr>
+<td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkserverType()'><b>checkserverType</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
+<td><div><pre>java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx/1.16.0]
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkserverType(TC002_Get_Single_Employee_Record.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace281896787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace281896787'><pre>java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx/1.16.0]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkserverType(TC002_Get_Single_Employee_Record.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@149e0f5d</td></tr>
+<tr>
+<td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkserverType()'><b>checkserverType</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
+<td><div><pre>java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx/1.16.0]
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkserverType(TC005_Delete_Employee_Record.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1617920437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617920437'><pre>java.lang.AssertionError: expected [nginx/1.14.1] but found [nginx/1.16.0]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkserverType(TC005_Delete_Employee_Record.java:89)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@6af93788</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,172 +395,127 @@ function toggleAllBoxes() {
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkContentLenght()'><b>checkContentLenght</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkContentLenght()'><b>checkContentLenght</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@42d80b78</td></tr>
+<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@149e0f5d</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkContentType()'><b>checkContentType</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkContentType()'><b>checkContentType</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@42d80b78</td></tr>
+<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@149e0f5d</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC003_Post_Employee_Record.checkContentType()'><b>checkContentType</b><br>Test class: com.employeeapi.testCases.TC003_Post_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC003_Post_Employee_Record@3bfdc050</td></tr>
+<td>com.employeeapi.testCases.TC003_Post_Employee_Record@1b1473ab</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC004_Put_Employee_Record.checkContentType()'><b>checkContentType</b><br>Test class: com.employeeapi.testCases.TC004_Put_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC004_Put_Employee_Record@1bce4f0a</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkContentType()'><b>checkContentType</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@5e3a8624</td></tr>
+<td>com.employeeapi.testCases.TC004_Put_Employee_Record@2f7c2f4f</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkCookies()'><b>checkCookies</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkResponseTime()'><b>checkResponseTime</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkResponseTime()'><b>checkResponseTime</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@42d80b78</td></tr>
+<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@149e0f5d</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkResposeBody()'><b>checkResposeBody</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkResposeBody()'><b>checkResposeBody</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@42d80b78</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC003_Post_Employee_Record.checkResposeBody()'><b>checkResposeBody</b><br>Test class: com.employeeapi.testCases.TC003_Post_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC003_Post_Employee_Record@3bfdc050</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC004_Put_Employee_Record.checkResposeBody()'><b>checkResposeBody</b><br>Test class: com.employeeapi.testCases.TC004_Put_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC004_Put_Employee_Record@1bce4f0a</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkResposeBody()'><b>checkResposeBody</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@5e3a8624</td></tr>
+<td>com.employeeapi.testCases.TC003_Post_Employee_Record@1b1473ab</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@42d80b78</td></tr>
+<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@149e0f5d</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC003_Post_Employee_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testCases.TC003_Post_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC003_Post_Employee_Record@3bfdc050</td></tr>
+<td>com.employeeapi.testCases.TC003_Post_Employee_Record@1b1473ab</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC004_Put_Employee_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testCases.TC004_Put_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC004_Put_Employee_Record@1bce4f0a</td></tr>
+<td>com.employeeapi.testCases.TC004_Put_Employee_Record@2f7c2f4f</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@5e3a8624</td></tr>
+<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@6af93788</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkcontentEncoding()'><b>checkcontentEncoding</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC003_Post_Employee_Record.checkcontentEncoding()'><b>checkcontentEncoding</b><br>Test class: com.employeeapi.testCases.TC003_Post_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC003_Post_Employee_Record@3bfdc050</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC004_Put_Employee_Record.checkcontentEncoding()'><b>checkcontentEncoding</b><br>Test class: com.employeeapi.testCases.TC004_Put_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC004_Put_Employee_Record@1bce4f0a</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkcontentEncoding()'><b>checkcontentEncoding</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@5e3a8624</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkserverType()'><b>checkserverType</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkserverType()'><b>checkserverType</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@42d80b78</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC003_Post_Employee_Record.checkserverType()'><b>checkserverType</b><br>Test class: com.employeeapi.testCases.TC003_Post_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC003_Post_Employee_Record@3bfdc050</td></tr>
+<td>com.employeeapi.testCases.TC003_Post_Employee_Record@1b1473ab</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC004_Put_Employee_Record.checkserverType()'><b>checkserverType</b><br>Test class: com.employeeapi.testCases.TC004_Put_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC004_Put_Employee_Record@1bce4f0a</td></tr>
-<tr>
-<td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkserverType()'><b>checkserverType</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
-<td></td>
-<td>0</td>
-<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@5e3a8624</td></tr>
+<td>com.employeeapi.testCases.TC004_Put_Employee_Record@2f7c2f4f</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC001_Get_All_Employees.checkstatusLine()'><b>checkstatusLine</b><br>Test class: com.employeeapi.testCases.TC001_Get_All_Employees</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC001_Get_All_Employees@1e88b3c</td></tr>
+<td>com.employeeapi.testCases.TC001_Get_All_Employees@3aefe5e5</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkstatusLine()'><b>checkstatusLine</b><br>Test class: com.employeeapi.testCases.TC002_Get_Single_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@42d80b78</td></tr>
+<td>com.employeeapi.testCases.TC002_Get_Single_Employee_Record@149e0f5d</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC003_Post_Employee_Record.checkstatusLine()'><b>checkstatusLine</b><br>Test class: com.employeeapi.testCases.TC003_Post_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC003_Post_Employee_Record@3bfdc050</td></tr>
+<td>com.employeeapi.testCases.TC003_Post_Employee_Record@1b1473ab</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC004_Put_Employee_Record.checkstatusLine()'><b>checkstatusLine</b><br>Test class: com.employeeapi.testCases.TC004_Put_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC004_Put_Employee_Record@1bce4f0a</td></tr>
+<td>com.employeeapi.testCases.TC004_Put_Employee_Record@2f7c2f4f</td></tr>
 <tr>
 <td title='com.employeeapi.testCases.TC005_Delete_Employee_Record.checkstatusLine()'><b>checkstatusLine</b><br>Test class: com.employeeapi.testCases.TC005_Delete_Employee_Record</td>
 <td></td>
 <td>0</td>
-<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@5e3a8624</td></tr>
+<td>com.employeeapi.testCases.TC005_Delete_Employee_Record@6af93788</td></tr>
 </table><p>
 </body>
 </html>
