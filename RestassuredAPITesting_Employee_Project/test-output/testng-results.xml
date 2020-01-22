@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-22T12:06:05 IST" name="Default suite" finished-at="2020-01-22T12:06:07 IST" duration-ms="2299">
+  <suite started-at="2020-01-22T14:54:29 IST" name="Default suite" finished-at="2020-01-22T14:54:35 IST" duration-ms="5808">
     <groups>
     </groups>
-    <test started-at="2020-01-22T12:06:05 IST" name="Default test" finished-at="2020-01-22T12:06:07 IST" duration-ms="2299">
+    <test started-at="2020-01-22T14:54:29 IST" name="Default test" finished-at="2020-01-22T14:54:35 IST" duration-ms="5808">
       <class name="com.employeeapi.testCases.TC006_Authentication">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T12:06:05 IST" name="setup" finished-at="2020-01-22T12:06:05 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T14:54:29 IST" name="setup" finished-at="2020-01-22T14:54:30 IST" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="getAllEmployees()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T12:06:05 IST" name="getAllEmployees" finished-at="2020-01-22T12:06:07 IST" duration-ms="2067" status="PASS">
+        <test-method is-config="true" signature="getAllEmployees()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T14:54:30 IST" name="getAllEmployees" finished-at="2020-01-22T14:54:35 IST" duration-ms="5404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllEmployees -->
-        <test-method signature="checkResponseBody()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T12:06:07 IST" name="checkResponseBody" finished-at="2020-01-22T12:06:07 IST" duration-ms="32" status="PASS">
+        <test-method signature="checkResponseBody()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T14:54:35 IST" name="checkResponseBody" finished-at="2020-01-22T14:54:35 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResponseBody -->

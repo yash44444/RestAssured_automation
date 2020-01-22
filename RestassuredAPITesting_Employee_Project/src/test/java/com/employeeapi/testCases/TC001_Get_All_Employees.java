@@ -68,9 +68,9 @@ public class TC001_Get_All_Employees extends TestBase{
 		
 		Assert.assertTrue(responseTime<10000);		
 	}
-	
-	
-	@Test(priority=4)
+		
+	@Test(priority=1)
+	 void statusLine()
  	{
 		logger.info("***********  Checking Status Line **********");
 		

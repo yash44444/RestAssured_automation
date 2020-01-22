@@ -25,11 +25,11 @@ public class TC006_Authentication extends TestBase{
 	// Basic Auth
 		
 		
-		/*
-		 * PreemptiveBasicAuthScheme auth= new PreemptiveBasicAuthScheme();
-		 * auth.setUserName("ToolsQA"); auth.setPassword("TestPassword");
-		 * RestAssured.authentication=auth;
-		 */
+		
+		  PreemptiveBasicAuthScheme auth= new PreemptiveBasicAuthScheme();
+		  auth.setUserName("ToolsQA"); auth.setPassword("TestPassword");
+		  RestAssured.authentication=auth;
+		 
 		 
 		 
 	
