@@ -71,8 +71,7 @@ public class TC001_Get_All_Employees extends TestBase{
 	
 	
 	@Test(priority=4)
-	void checkstatusLine()
-	{
+ 	{
 		logger.info("***********  Checking Status Line **********");
 		
 		String statusLine = response.getStatusLine(); // Getting status Line

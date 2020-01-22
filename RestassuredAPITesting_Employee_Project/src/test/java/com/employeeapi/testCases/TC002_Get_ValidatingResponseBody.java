@@ -27,7 +27,7 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class TC002_Get_Weather extends TestBase{
+public class TC002_Get_ValidatingResponseBody extends TestBase{
 
 	RequestSpecification httpRequest;
 	Response response;

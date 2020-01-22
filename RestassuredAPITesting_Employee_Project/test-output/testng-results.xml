@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-21T23:05:19 IST" name="Default suite" finished-at="2020-01-21T23:05:24 IST" duration-ms="4294">
+  <suite started-at="2020-01-22T12:06:05 IST" name="Default suite" finished-at="2020-01-22T12:06:07 IST" duration-ms="2299">
     <groups>
     </groups>
-    <test started-at="2020-01-21T23:05:19 IST" name="Default test" finished-at="2020-01-21T23:05:24 IST" duration-ms="4294">
-      <class name="com.employeeapi.testCases.TC001_Get_All_Employees">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:19 IST" name="setup" finished-at="2020-01-21T23:05:20 IST" duration-ms="132" status="PASS">
+    <test started-at="2020-01-22T12:06:05 IST" name="Default test" finished-at="2020-01-22T12:06:07 IST" duration-ms="2299">
+      <class name="com.employeeapi.testCases.TC006_Authentication">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T12:06:05 IST" name="setup" finished-at="2020-01-22T12:06:05 IST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="getAllEmployees()[pri:0, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:20 IST" name="getAllEmployees" finished-at="2020-01-21T23:05:24 IST" duration-ms="4018" status="PASS">
+        <test-method is-config="true" signature="getAllEmployees()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T12:06:05 IST" name="getAllEmployees" finished-at="2020-01-22T12:06:07 IST" duration-ms="2067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllEmployees -->
-        <test-method signature="checkResponseBody()[pri:1, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:24 IST" name="checkResponseBody" finished-at="2020-01-21T23:05:24 IST" duration-ms="43" status="PASS">
+        <test-method signature="checkResponseBody()[pri:0, instance:com.employeeapi.testCases.TC006_Authentication@65466a6a]" started-at="2020-01-22T12:06:07 IST" name="checkResponseBody" finished-at="2020-01-22T12:06:07 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResponseBody -->
-        <test-method signature="checkStatusCode()[pri:2, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:24 IST" name="checkStatusCode" finished-at="2020-01-21T23:05:24 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatusCode -->
-        <test-method signature="checkResponseTime()[pri:3, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:24 IST" name="checkResponseTime" finished-at="2020-01-21T23:05:24 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkResponseTime -->
-        <test-method signature="checkstatusLine()[pri:4, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:24 IST" name="checkstatusLine" finished-at="2020-01-21T23:05:24 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkstatusLine -->
-        <test-method signature="checkContentType()[pri:5, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:24 IST" name="checkContentType" finished-at="2020-01-21T23:05:24 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkContentType -->
-        <test-method signature="checkserverType()[pri:6, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:24 IST" name="checkserverType" finished-at="2020-01-21T23:05:24 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkserverType -->
-        <test-method signature="checkcontentEncoding()[pri:7, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:24 IST" name="checkcontentEncoding" finished-at="2020-01-21T23:05:24 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkcontentEncoding -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.employeeapi.testCases.TC001_Get_All_Employees@7adda9cc]" started-at="2020-01-21T23:05:24 IST" name="tearDown" finished-at="2020-01-21T23:05:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.employeeapi.testCases.TC001_Get_All_Employees -->
+      </class> <!-- com.employeeapi.testCases.TC006_Authentication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

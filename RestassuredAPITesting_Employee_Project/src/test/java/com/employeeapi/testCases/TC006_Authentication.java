@@ -11,7 +11,7 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class TC006_Get_All_Employees_record extends TestBase{
+public class TC006_Authentication extends TestBase{
 		
 	@BeforeClass
 	void getAllEmployees() throws InterruptedException 
@@ -22,9 +22,16 @@ public class TC006_Get_All_Employees_record extends TestBase{
 	// Specify base URI
 	RestAssured.baseURI = "http://restapi.demoqa.com/authentication/CheckForAuthentication"; 
 	
-	PreemptiveBasicAuthScheme auth= new PreemptiveBasicAuthScheme();
-	auth.setUserName("ToolsQA");
-	auth.setPassword("TestPassword");
+	// Basic Auth
+		
+		
+		/*
+		 * PreemptiveBasicAuthScheme auth= new PreemptiveBasicAuthScheme();
+		 * auth.setUserName("ToolsQA"); auth.setPassword("TestPassword");
+		 * RestAssured.authentication=auth;
+		 */
+		 
+		 
 	
 	// Request object
 	httpRequest = RestAssured.given(); // With this particular object we are going to send the reqst to the server.
@@ -35,7 +42,7 @@ public class TC006_Get_All_Employees_record extends TestBase{
 	Thread.sleep(5);
 	}
 			
-	@Test(priority=1)
+	@Test
 	void checkResponseBody()
 	{
 		logger.info("***********  Checking Response Body **********");
@@ -43,19 +50,13 @@ public class TC006_Get_All_Employees_record extends TestBase{
 		// Printing response in the console window
 		String responseBody = response.getBody().asString();  // json -> string 
 		logger.info("Response Body==>"+responseBody);
-		Assert.assertTrue(responseBody!=null);
+		
+		int statusCode=response.getStatusCode();
+		System.out.println("status code is "+statusCode);
+		Assert.assertEquals(statusCode,200);
 		
 	}
 		
-	@Test(priority=2)
-	void checkStatusCode()
-	{
-		logger.info("***********  Checking Status Code **********");
-		
-		int statusCode = response.getStatusCode(); // Getting status code
-		logger.info("Status Code is ==>" + statusCode); //200
-		Assert.assertEquals(statusCode, 200);
-		
-	}
+	
 				 	
 }

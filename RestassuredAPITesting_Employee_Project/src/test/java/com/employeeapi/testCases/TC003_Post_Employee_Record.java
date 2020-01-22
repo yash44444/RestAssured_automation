@@ -36,7 +36,6 @@ public class TC003_Post_Employee_Record extends TestBase{
 	String empSalary=RestUtils.empSal();
 	String empAge=RestUtils.empAge();
 	
-	
 	@BeforeClass
 	void createEmployee() throws InterruptedException
 	{
@@ -47,7 +46,7 @@ public class TC003_Post_Employee_Record extends TestBase{
 
 		// Request payload
 		JSONObject requestParams = new JSONObject();
-		requestParams.put("name", empName); // Cast
+		requestParams.put("name", empName); 
 		requestParams.put("salary", empSalary);
 		requestParams.put("age", empAge);
 		
@@ -58,7 +57,6 @@ public class TC003_Post_Employee_Record extends TestBase{
 		httpRequest.body(requestParams.toJSONString());
 		response = httpRequest.request(Method.POST, "/create");		
 		Thread.sleep(5000);
-
 	}
 	
 	@Test(priority=1)
